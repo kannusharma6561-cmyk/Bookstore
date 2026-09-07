@@ -1,0 +1,317 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #faf7f2;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(107, 33, 168, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(245, 166, 35, 0.04) 0%, transparent 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #2b2b2b;
+}
+
+
+
+
+
+
+
+
+ 
+
+
+.popular-books {
+  padding: 40px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+}
+
+.section-header a {
+  color: #6b21a8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.book-card {
+  width: 350px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 35px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.book-cover {
+ 
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+  
+
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.book-card h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.book-card p {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.book-card span {
+  font-size: 13px;
+  color: #f5a623;
+}
+
+/* Popular Books Responsive */
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= AUTH PAGE (Login/Signup) CSS ================= */
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.auth-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-box h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.auth-box p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-box label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.auth-box input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.auth-box input:focus {
+  outline: none;
+  border-color: #6b21a8;
+}
+
+.auth-btn {
+  background-color: #6b21a8;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.switch-auth {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.switch-auth a {
+  color: #6b21a8;
+  font-weight: 500;
+}
+
+/* ---------------- Auth Page Responsive ---------------- */
+@media (max-width: 480px) {
+  .auth-box {
+    padding: 25px;
+  }
+
+  .auth-box h1 {
+    font-size: 20px;
+  }
+}
+
+
+/* ================= PROFILE PAGE CSS ================= */
+
+.profile-page {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #f3e8ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.profile-header h2 {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.profile-header p {
+  color: #777;
+  font-size: 14px;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-link {
+  display: block;
+  padding: 12px 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+}
+
+.logout-btn {
+  color: #dc2626;
+}
+
+
+/* ================= BOOK DETAILS PAGE CSS ================= */
+
+.book-details-page {
+  padding: 40px;
+}
+
+.book-details-page > a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #6b21a8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.details-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.details-cover {
+  width: 220px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.details-info h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.details-info .author {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.fav-btn {
+  margin-top: 20px;
+  background-color: #6b21a8;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+} 
