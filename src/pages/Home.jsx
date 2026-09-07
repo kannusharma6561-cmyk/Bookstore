@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import books from "../data/books";
+import books from "../data/Books";
 import "./Home.css";
 
 function Home() {
