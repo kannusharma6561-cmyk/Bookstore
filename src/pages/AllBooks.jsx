@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import books from "../data/books";
+import books from "../data/Books";
 import "./AllBooks.css";
 
 

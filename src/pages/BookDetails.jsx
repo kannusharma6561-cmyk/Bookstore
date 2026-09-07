@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import books from "../data/books";
+import books from "../data/Books";
 import { useFavorites } from "../context/FavoritesContext";
 
 function BookDetails() {
