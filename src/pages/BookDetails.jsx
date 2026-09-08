@@ -30,6 +30,7 @@ function BookDetails() {
           <h1>{book.title}</h1>
           <p className="author">{book.author}</p>
           <span>⭐ {book.rating}</span>
+          <p className="book-description">{book.description}</p>
 
           <button className="fav-btn" onClick={handleFavoriteClick}>
             {favorite ? "♥ Remove from Favorites" : "♡ Add to Favorites"}

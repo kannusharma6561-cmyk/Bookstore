@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useFavorites } from "../context/FavoritesContext";
 import { useAuth } from "../context/AuthContext";
+import "./Profile.css";
 
 function Profile() {
   const { favorites } = useFavorites();

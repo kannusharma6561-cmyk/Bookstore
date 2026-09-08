@@ -118,8 +118,12 @@
 }
 
 .book-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px) scale(1.02);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.book-card:active {
+  transform: translateY(-4px) scale(0.98);
 }
 
 .book-card:nth-child(4n+1) { border-top-color: #1F6F5C; }

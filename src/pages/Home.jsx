@@ -22,7 +22,8 @@ function Home() {
         </div>
 
         <div className="book-grid">
-          {books.map((book) => (
+          {books.slice(0,8).map((book) => (
+            <Link to={"/book/${book.id}"} key={book.id}>
             <div className="book-card" key={book.id}>
               <div className="book-cover">
                 <img src={book.cover} alt={book.title} />
@@ -31,11 +32,13 @@ function Home() {
               <p>{book.author}</p>
               <span>⭐ {book.rating}</span>
             </div>
+            </Link>
           ))}
         </div>
       </section>
     </div>
   );
 }
+
 
 export default Home;

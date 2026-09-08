@@ -1,5 +1,6 @@
 import { useFavorites } from "../context/FavoritesContext";
 import { Link } from "react-router-dom";
+import "./Favorites.css";
 
 function Favorites() {
   const { favorites, removeFavorite } = useFavorites();
